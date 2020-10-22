@@ -6,7 +6,8 @@ html
 
 h1
 {
-    font-size: 20rem;
+    font-style: italic;
+    font-size: 7rem;
     position: absolute;
     margin-left: 45%;
 
