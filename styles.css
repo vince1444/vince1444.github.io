@@ -8,7 +8,7 @@ h1
 {
     color: #E8E8E8;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
-    font-size: 20rem;
+    font-size: 15rem;
     padding-left: 40%;
     font-style: italic;
     position: absolute;
@@ -31,5 +31,5 @@ hr
 p
 {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
-    font-size: 10rem;
+    font-size: 3rem;
 }
