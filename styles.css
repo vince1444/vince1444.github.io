@@ -33,3 +33,9 @@ p
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-size: 3rem;
 }
+
+.socials
+{
+    border: 1rem solid white;
+    border-radius: 50%;
+}
