@@ -6,11 +6,11 @@ html
 
 h1
 {
+    color: #E8E8E8;
     font-style: italic;
-    font-size: 7rem;
+    font-size: 1rem;
     position: absolute;
     margin-left: 45%;
-
 }
 
 
