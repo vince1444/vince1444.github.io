@@ -11,7 +11,6 @@ h1
     font-size: 15rem;
     padding-left: 40%;
     font-style: italic;
-    position: absolute;
 }
 
 
@@ -24,6 +23,7 @@ body
 
 hr
 {
+    padding-top: 30%;
     size: 3rem;
     color: #E8E8E8;
 }
