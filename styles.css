@@ -1,43 +1,50 @@
+:root
+{
+    --heading-color: #E8E8E8;
+    --background-color: #c2c0c0;
+}
+
+
 html
 {
+    height: 100%;
     font-size: 62.5%;
 }
 
 
 h1
 {
-    color: #E8E8E8;
+    color: var(--heading-color);
     font-family: "Trebuchet MS", Helvetica, sans-serif;
-    font-size: 15rem;
-    padding-left: 40%;
+    font-size: 18rem;
     font-style: italic;
+    text-shadow: .5rem .5rem black;
 }
 
 
 body
 {
-    margin-left: 5%;
-    margin-right: 5%;
-    background-color: #616161;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: var(--background-color);
 }
 
-hr
-{
-    padding-top: 30%;
-    size: 3rem;
-    color: #E8E8E8;
-}
-
-p
-{
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-    font-size: 2rem;
-}
 
 .socials
 {
-    border: 0.2rem solid black;
-    border-radius: 50%;
-    width: 3%;
-    height: 3%;
+    text-decoration: none;
+    font-size: 3rem;
+    color: var(--heading-color);
+    text-shadow: .2rem .2rem black;
+}
+
+.navbar
+{
+    /*border: .6rem solid black;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
 }
