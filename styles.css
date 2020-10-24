@@ -42,9 +42,18 @@ body
 
 .navbar
 {
-    /*border: .6rem solid black;*/
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-basis: 100%;
+}
+
+#rectangle
+{
+    border: .3rem solid black;
+    margin-top: 18%;
+    width: 60%;
+    height: 40%;
+    background-color: var(--background-color);
+    position: absolute;
 }
