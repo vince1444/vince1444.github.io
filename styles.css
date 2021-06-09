@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
+
 :root {
     background: black;
 }
@@ -45,9 +46,11 @@
 }
 
 
+
 #github-logo {
     height: auto;
     width: 3%;
+    
 }
 
 #linkedin-logo {
@@ -72,4 +75,18 @@ strong {
     position: relative;    
     text-decoration: none;
     color: white;
+}
+
+
+@media screen and (max-width: 1062px) {
+    #github-logo {
+        height: auto;
+        width: 13%;    
+        border: 3px solid red;
+    }
+
+    #linkedin-logo {
+        height: auto;
+        width: 13%;
+    }
 }
