@@ -16,6 +16,7 @@
 #main-header {
     font-size: 10rem;
     font-family: 'Staatliches', cursive;
+    text-align: center;
     color: white;
     margin-bottom: 0;
     letter-spacing: .5rem;
@@ -23,9 +24,13 @@
 
 
 #sub-header {
+    position: relative;
+    bottom: 1rem;
     font-size: 1.65rem;
+    text-align: center;
     font-family: Sans-Serif;
     color: white;
+    
 }
 
 #socials-bar {
