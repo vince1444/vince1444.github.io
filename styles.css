@@ -49,13 +49,13 @@
 
 #github-logo {
     height: auto;
-    width: 3%;
+    width: 70px;
     
 }
 
 #linkedin-logo {
     height: auto;
-    width: 3%;
+    width: 70px;
    
 }
 
@@ -65,28 +65,14 @@
 
 .line {
     position: relative;
-    bottom: 1rem;
-    width: 50%;
+    bottom: 1.5rem;
+    width: 56%;
     height: .1rem;
     background-color: white;
 }
 
 strong {
     position: relative;    
-    text-decoration: none;
-    color: white;
-}
-
-
-@media screen and (max-width: 1062px) {
-    #github-logo {
-        height: auto;
-        width: 13%;    
-        border: 3px solid red;
-    }
-
-    #linkedin-logo {
-        height: auto;
-        width: 13%;
-    }
+    text-decoration: underline;
+    border-bottom: 2px double white;
 }
