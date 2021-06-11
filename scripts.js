@@ -1,6 +1,7 @@
 window.addEventListener("DOMContentLoaded", () => {
     setTimeout(type, 300, document.getElementById("main-header"));
     setTimeout(fadeIn, 1500, document.getElementById("sub-header"));
+    setTimeout(fadeIn, 1800, document.getElementById("socials-container"));
 });
 
 function type(element) {
@@ -23,3 +24,4 @@ function fadeIn(element) {
         }, speed * (i + 1));
     }
 }
+
