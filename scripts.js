@@ -1,16 +1,25 @@
 window.addEventListener("DOMContentLoaded", () => {
-    setTimeout(type, 400);
+    setTimeout(type, 300, document.getElementById("main-header"));
+    setTimeout(fadeIn, 1500, document.getElementById("sub-header"));
 });
 
-function type() {
-    let i = 0;
+function type(element) {
     (function x() {
         const text = "Hello, World.";
         const speed = 90;
-        if (i < text.length) {
-            document.getElementById("main-header").innerHTML += text.charAt(i);
-            i++;
-            setTimeout(x, speed);
+        for (let i = 0; i < text.length; i++) {
+            setTimeout(() => {
+                element.innerHTML += text.charAt(i);
+            }, speed * (i + 1));
         }
     })(); 
+}
+
+function fadeIn(element) {
+    const speed = 100;
+    for (let i = 0; i < 10; i++) {
+        setTimeout(() => {
+            element.style.opacity = i * 0.1;
+        }, speed * (i + 1));
+    }
 }

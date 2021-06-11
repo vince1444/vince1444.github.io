@@ -20,7 +20,7 @@
     color: white;
     margin-bottom: 0;
     letter-spacing: .5rem;
-    height: 200px;
+    height: 185px;
 }
 
 
@@ -31,7 +31,7 @@
     text-align: center;
     font-family: Sans-Serif;
     color: white;
-    
+    opacity: 0;
 }
 
 #socials-bar {
