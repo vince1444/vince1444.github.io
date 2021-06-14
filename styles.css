@@ -51,7 +51,6 @@
     border: 1px solid red;
 }
 
-
 ul {
     text-align: center;
     position: relative;
@@ -93,27 +92,58 @@ li {
 
 .github-logo {
     height: auto;
-    width: 70px;
+    width: 50px;
 }
 
 .linkedin-logo {
     height: auto;
-    width: 70px;
+    width: 50px;
 }
 
 .socials-space {
     margin-left: 1.5%;
 }
 
-.line {
+#header-line {
     position: relative;
     bottom: 1.5rem;
     width: 56vw;
+}
+
+.line {
     height: .1rem;
     background-color: white;
 }
 
+#arrow-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 45vh;
+    opacity: 0;
+}
 
+.down-arrow {
+    height: 0; 
+    width: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid white;
+    animation: bounce 2s infinite;
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+}
 
 /* scrollbar */
 body::-webkit-scrollbar {

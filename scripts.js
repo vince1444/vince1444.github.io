@@ -2,6 +2,7 @@ window.addEventListener("DOMContentLoaded", () => {
     setTimeout(type, 300, document.getElementById("main-header"));
     setTimeout(fadeIn, 1500, document.getElementById("sub-header"));
     setTimeout(fadeIn, 1800, document.getElementById("socials-container-header"));
+    setTimeout(fadeIn, 2300, document.getElementById("arrow-container"));
 });
 
 let imgMode = 0;
