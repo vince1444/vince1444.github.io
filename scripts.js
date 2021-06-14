@@ -1,8 +1,10 @@
 window.addEventListener("DOMContentLoaded", () => {
     setTimeout(type, 300, document.getElementById("main-header"));
     setTimeout(fadeIn, 1500, document.getElementById("sub-header"));
-    setTimeout(fadeIn, 1800, document.getElementById("socials-container"));
+    setTimeout(fadeIn, 1800, document.getElementById("socials-container-header"));
 });
+
+let imgMode = 0;
 
 function type(element) {
     (function x() {
@@ -22,6 +24,19 @@ function fadeIn(element) {
         setTimeout(() => {
             element.style.opacity = i * 0.1;
         }, speed * (i + 1));
+    }
+}
+
+function resizeImg(img) {
+    if (imgMode == 0) {
+        img.style.transform = "scale(2)";
+        img.style.transition = "transform 0.25s ease";
+        imgMode = 1;
+    }
+    else {
+        img.style.transform = "scale(1)";
+        img.style.transition = "transform 0.25s ease";
+        imgMode = 0;
     }
 }
 
