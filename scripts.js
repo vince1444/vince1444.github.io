@@ -1,11 +1,22 @@
+// global variable to resize image based on mode
+let imgMode = 0;
+
 window.addEventListener("DOMContentLoaded", () => {
     setTimeout(type, 300, document.getElementById("main-header"));
     setTimeout(fadeIn, 1500, document.getElementById("sub-header"));
     setTimeout(fadeIn, 1800, document.getElementById("socials-container-header"));
     setTimeout(fadeIn, 2300, document.getElementById("arrow-container"));
+    document.getElementById("more-button")
+            .addEventListener("click", () => {
+                // find a prettier way for this (presumably function.prototype.bind...)
+                scrollToProjects(document.getElementById("projects-container"));
+    });
 });
-
-let imgMode = 0;
+    
+function scrollToProjects(projectsDiv) {
+    // optional paramater alignToTop; if true it aligns to top
+    projectsDiv.scrollIntoView({behavior: "smooth", block: "center"});
+}
 
 function type(element) {
     (function x() {
@@ -40,4 +51,3 @@ function resizeImg(img) {
         imgMode = 0;
     }
 }
-
