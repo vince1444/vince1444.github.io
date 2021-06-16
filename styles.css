@@ -69,11 +69,11 @@ li {
 
 #projects-container {
     display: grid;
-    grid-template-areas: "header projects"
-                         "header projects"
-                         "header projects"
-                         "header projects";
-    grid-template-columns: 35% 65%;
+    grid-template-areas: "header projects projects"
+                         "header projects projects"
+                         "header projects projects"
+                         "header projects projects";
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
     position: relative;
     top: 70vh;
@@ -83,11 +83,11 @@ li {
 
 #experience-container {
     display: grid;
-    grid-template-areas: "experience header"
-                         "experience header"
-                         "experience header"
-                         "experience header";
-    grid-template-columns: 65% 35%;
+    grid-template-areas: "experience experience header"
+                         "experience experience header"
+                         "experience experience header"
+                         "experience experience header";
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
     position: relative;
     top: 70vh;
@@ -149,7 +149,7 @@ li {
 #header-line {
     position: relative;
     bottom: 1.5rem;
-    width: 1100px;
+    width: 100%;
 }
 
 #footer-line {
