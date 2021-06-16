@@ -3,12 +3,18 @@
 
 
 :root {
-    background: black;
+    background-color: black;
 }
 
 html {
     margin: 0;
     padding: 0;
+}
+
+#arrow-img {
+    position: fixed;
+    left: 90vw;
+    top: 68vh;
 }
 
 #header-container {
@@ -146,11 +152,30 @@ li {
     width: 95vw;
 }
 
+#projects-line {
+    position: relative;
+    bottom: 185px;
+    height: .1rem;
+    background-color: white;
+    width: 500px;
+}
+
+#experience-line {
+    position: relative;
+    bottom: 185px;
+    height: .1rem;
+    background-color: white;
+    width: 590px;
+}
+
 #me-img {
     border-radius: 50%;
     height: 200px;
     width: 200px;
 }
+
+/* Don't think I'm going to keep this but this is for
+   the see-more button
 
 #arrow-container {
     width: 95vw;
@@ -187,6 +212,7 @@ li {
         transform: translateY(-10px);
     }
 }
+*/
 
 /* scrollbar */
 body::-webkit-scrollbar {
