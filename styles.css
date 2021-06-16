@@ -6,6 +6,11 @@
     background: black;
 }
 
+html {
+    margin: 0;
+    padding: 0;
+}
+
 #header-container {
     display: flex;
     flex-wrap: wrap;
@@ -122,10 +127,12 @@ li {
 }
 
 #arrow-container {
+    width: 95vw;
     display: flex;
     justify-content: center;
-    position: relative;
-    top: 450px;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
     opacity: 0;
 }
 
