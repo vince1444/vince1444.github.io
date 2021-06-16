@@ -67,27 +67,13 @@ li {
     font-family: Sans-Serif;
 }
 
-#projects-container {
+.content-container {
     display: grid;
-    grid-template-areas: "header projects projects"
-                         "header projects projects"
-                         "header projects projects"
-                         "header projects projects";
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    position: relative;
-    top: 70vh;
-    width: 95vw;
-    height: 95vh;
-}
-
-#experience-container {
-    display: grid;
-    grid-template-areas: "experience experience header"
-                         "experience experience header"
-                         "experience experience header"
-                         "experience experience header";
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "header header header header"
+                         "content content content content"
+                         "content content content content"
+                         "content content content content";
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
     position: relative;
     top: 70vh;
@@ -100,14 +86,8 @@ li {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-}
-
-#experience-container > .content-header-container {
-    align-items: flex-start;
-}
-
-#projects-container > .content-header-container {
-    align-items: flex-end;
+    align-items: center;
+    justify-content: center;
 }
 
 .content-header {
@@ -118,10 +98,18 @@ li {
 
 .content-subheader {
     position: relative;
-    bottom: 180px;
+    bottom: 170px;
     color: white;
     font-family: Sans-Serif;
     font-size: 2rem;
+}
+
+#projects .content-header-container > .content-subheader {
+    left: 200px;
+}
+
+#experience > .content-header-container > .content-subheader {
+    right: 146.8px;
 }
 
 .socials-bar {

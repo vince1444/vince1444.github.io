@@ -9,7 +9,7 @@ window.addEventListener("DOMContentLoaded", () => {
     document.getElementById("more-button")
             .addEventListener("click", () => {
                 // find a prettier way for this (presumably function.prototype.bind...)
-                scrollToProjects(document.getElementById("projects-container"));
+                scrollToProjects(document.querySelector(".content-container"));
     });
 });
     
