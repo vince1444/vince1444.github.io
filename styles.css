@@ -16,8 +16,14 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     overflow-x: hidden;
-    width: 100vw;
+    width: 100%;
+    position: relative;
+    left: 7px;
 }
 
 #arrow-img {
