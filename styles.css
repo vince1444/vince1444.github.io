@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap');
 
 :root {
     background-color: black;
@@ -70,7 +70,7 @@ html {
 
 #socials-container-footer {
     position: relative;
-    top: 200vh;
+    top: 70vh;
 }
 
 .socials-bar {
@@ -92,13 +92,13 @@ html {
 }
 
 .socials-space {
-    margin-left: 1.5%;
+    margin-left: 1%;
 }
 
 #header-line {
     position: relative;
     bottom: 1.5rem;
-    width: 50%;
+    width: 50vw;
 }
 
 #footer-line {
@@ -120,9 +120,7 @@ html {
     position: relative;
     top: 70vh;
     width: 98vw;
-    height: 150vh;
-    border: 1px solid white;
-    justify-items: center;
+    height: 200vh;
 }
 
 .content-header-container {
@@ -130,7 +128,6 @@ html {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
 }
 
@@ -138,14 +135,6 @@ html {
     color: white;
     font-family: 'Staatliches', cursive;
     font-size: 9rem;
-}
-
-.content-subheader {
-    position: relative;
-    bottom: 170px;
-    color: white;
-    font-family: Sans-Serif;
-    font-size: 2rem;
 }
 
 .content-subcontainer {
@@ -157,44 +146,74 @@ html {
     height: 100vh;
 }
 
+.content-subheader {
+    position: relative;
+    bottom: 170px;
+    color: white;
+    font-family: Sans-Serif;
+    font-size: 2rem;
+}
+
 #experience-list-container {
     position: relative;
     bottom: 150px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     width: 50%;
 }
 
-#experience-list {
+#projects-container {
+    
+}
+
+.experience-list {
     list-style-type: none;
     border: 1px solid white;
     width: 100%;
     padding-left: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.experience-list > p {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 35px;
+    padding-bottom: 15px;
+    color: white;
+    font-size: 1.9rem;
+    border-bottom: solid;
+    font-style: italic;
+    font-weight: bold;
 }
 
 .experience-list-item {
     color: white;
     font-size: 2.5rem;
-    border-bottom: solid;
     margin: 10px;
     padding-bottom: 20px;
     text-align: center;
+    font-weight: bold;
+}
+
+#projects-subheader {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#experience-subheader {
+    display: flex;
+    justify-content: flex-start;
 }
 
 .list-sub > li {
+    position: relative;
+    bottom: 30px;
     list-style-type: square;
     margin: 15px;
     color: white;
     font-size: 1.75rem;
-    font-family: Sans-Serif;
-}
-
-#projects .content-header-container > .content-subheader {
-    left: 200px;
-}
-
-#experience > .content-header-container > .content-subheader {
-    right: 146.8px;
 }
 
 #projects-line {
