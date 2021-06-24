@@ -38,6 +38,8 @@ body {
 }
 
 #main-header {
+    display: flex;
+    align-items: center;
     font-size: 10rem;
     font-family: 'Staatliches', cursive;
     text-align: center;
@@ -45,6 +47,7 @@ body {
     margin-bottom: 0;
     letter-spacing: .5rem;
     height: 185px;
+    margin-right: -.5rem;
 }
 
 #sub-header {
