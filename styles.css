@@ -15,6 +15,11 @@ html {
     padding: 0;
 }
 
+body {
+    overflow-x: hidden;
+    width: 100vw;
+}
+
 #arrow-img {
     position: fixed;
     left: 90vw;
@@ -123,7 +128,7 @@ html {
     grid-template-rows: repeat(4, 1fr);
     position: relative;
     top: 70vh;
-    width: 98vw;
+    width: 100vw;
     height: 200vh;
 }
 
@@ -146,7 +151,7 @@ html {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 98vw;
+    width: 100vw;
     height: 100vh;
 }
 
