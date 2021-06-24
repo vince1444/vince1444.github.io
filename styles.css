@@ -201,9 +201,10 @@ html {
     height: 100%;
     width: 100%;
     margin: 0;
-    overflow: hidden;
     padding-left: 15px;
     padding-right: 15px;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 #desc2 {
@@ -214,10 +215,11 @@ html {
     height: 100%;
     width: 100%;
     margin: 0;
-    overflow: hidden;
     padding-left: 15px;
     padding-right: 15px;
     text-align: end;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .project-list {
@@ -365,18 +367,18 @@ html {
 */
 
 /* scrollbar */
-body::-webkit-scrollbar {
+*::-webkit-scrollbar {
     background-color: black;
 }
 
 /* scrollbar itself */
-body::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
     background-color: white;
     border-radius: 16px;
     border: 5.3px solid black;
 }
 
 /* set button(top and bottom of the scrollbar) */
-body::-webkit-scrollbar-button {
+*::-webkit-scrollbar-button {
     display:none;
 }
