@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 :root {
     background-color: black;
 }
@@ -164,7 +168,89 @@ html {
 }
 
 #projects-container {
-    
+    display: grid;
+    grid-template-areas: "proj1 desc1"
+                         "desc2 proj2";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 100vh;
+    width: 80vw;
+    position: relative;
+    bottom: 150px;
+}
+
+#proj1 {
+    grid-area: proj1;
+    border: 1px solid white;
+    width: 100%;
+    height: 100%;
+}
+
+#proj2 {
+    grid-area: proj2;
+    border: 1px solid white;
+    width: 100%;
+    height: 100%;
+}
+
+#desc1 {
+    grid-area: desc1;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.7rem;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#desc2 {
+    grid-area: desc2;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.7rem;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: end;
+}
+
+.project-list {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 0;
+}
+
+.project-list > li {
+    text-align: center;
+    font-weight:  bold;
+    font-size: 2rem;
+    list-style-type: none;
+    padding-bottom: 15px;
+}
+
+.project-list > ul {
+    list-style: square;
+    font-size: 1.7rem;
+}
+
+.project-list > ul > li {
+    margin-top: 20px;
+}
+
+.project-list > a {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+    color: white;
+    font-size: 1.2rem;
+    border-bottom: solid;
+    font-style: italic;
 }
 
 .experience-list {
