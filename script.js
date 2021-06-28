@@ -20,7 +20,7 @@ function scrollToProjects(projectsDiv) {
 
 function type(element) {
     (function x() {
-        const text = "Hello, World";
+        const text = "Hello, World.";
         const speed = 90;
         for (let i = 0; i < text.length; i++) {
             setTimeout(() => {

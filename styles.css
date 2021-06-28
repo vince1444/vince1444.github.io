@@ -86,7 +86,7 @@ body {
 
 #socials-container-footer {
     position: relative;
-    top: 70vh;
+    top: 65vh;
 }
 
 .socials-bar {
@@ -136,7 +136,14 @@ body {
     position: relative;
     top: 70vh;
     width: 100vw;
-    height: 200vh;
+}
+
+#projects > div {
+    height: 38vh;
+}
+
+#experience > div {
+    height: 50vh;
 }
 
 .content-header-container {
