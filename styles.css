@@ -46,13 +46,11 @@ body {
     color: white;
     margin-bottom: 0;
     letter-spacing: .5rem;
-    height: 185px;
+    
     margin-right: -.5rem;
 }
 
 #sub-header {
-    position: relative;
-    bottom: 1rem;
     font-size: 1.65rem;
     text-align: center;
     font-family: Sans-Serif;
@@ -62,8 +60,6 @@ body {
 
 #skills-list {
     text-align: center;
-    position: relative;
-    bottom: 20px;
     padding-left: 0;
     list-style-type: none;
 }
@@ -85,8 +81,7 @@ body {
 }
 
 #socials-container-footer {
-    position: relative;
-    top: 65vh;
+    
 }
 
 .socials-bar {
@@ -112,9 +107,7 @@ body {
 }
 
 #header-line {
-    position: relative;
-    bottom: 1.5rem;
-    width: 50vw;
+    width: 1000px;
 }
 
 #footer-line {
@@ -127,23 +120,12 @@ body {
 
 .content-container {
     display: grid;
-    grid-template-areas: "header header header header"
-                         "content content content content"
-                         "content content content content"
-                         "content content content content";
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    position: relative;
-    top: 70vh;
+    grid-template-areas: "header header"
+                         "content content"
+                         "content content"
+                         "content content";
+    grid-template-columns: repeat(2, 1fr);
     width: 100vw;
-}
-
-#projects > div {
-    height: 38vh;
-}
-
-#experience > div {
-    height: 50vh;
 }
 
 .content-header-container {
@@ -166,7 +148,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
 }
 
 .content-subheader {
@@ -183,7 +165,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 50%;
+    width: 50vw;
 }
 
 #projects-container {
@@ -406,18 +388,16 @@ body {
 
 /* media queries for responsiveness */
 
-@media only screen and (min-width: 0) and (max-width: 600) {
+@media only screen and (min-width: 0px) and (max-width: 600px) {
     #projects-container {
         width: 100vw;
     }
 
     #experience-list-container {
         width: 100vw;
-        bottom: 300px;
     }
 
     #socials-container-footer {
-        position: relative;
-        top: -100px;
+        top: 170vh;
     }
 }
