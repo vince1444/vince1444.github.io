@@ -80,10 +80,6 @@ body {
     opacity: 0;
 }
 
-#socials-container-footer {
-    
-}
-
 .socials-bar {
     display: flex;
     flex-direction: row;
@@ -180,16 +176,24 @@ body {
     bottom: 150px;
 }
 
+/* I don't think this works, will have to change later */
+
+#projects-container > div {
+    max-height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
 #proj1 {
     grid-area: proj1;
-    border: 1px solid white;
+    border: 2px solid white;
     width: 100%;
     height: 100%;
 }
 
 #proj2 {
     grid-area: proj2;
-    border: 1px solid white;
+    border: 2px solid white;
     width: 100%;
     height: 100%;
 }
@@ -204,8 +208,6 @@ body {
     margin: 0;
     padding-left: 15px;
     padding-right: 15px;
-    overflow-y: scroll;
-    overflow-x: hidden;
 }
 
 #desc2 {
@@ -219,8 +221,6 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     text-align: end;
-    overflow-y: scroll;
-    overflow-x: hidden;
 }
 
 .project-list {
@@ -388,13 +388,13 @@ body {
 
 /* media queries for responsiveness */
 
-@media only screen and (min-width: 0px) and (max-width: 600px) {
+@media only screen and (min-width: 0px) and (max-width: 1500px) {
     #projects-container {
-        width: 100vw;
+        width: 90vw;
     }
 
     #experience-list-container {
-        width: 100vw;
+        width: 90vw;
     }
 
     #socials-container-footer {
